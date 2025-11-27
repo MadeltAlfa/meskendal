@@ -65,3 +65,55 @@ The Laravel framework is gopen-sourced software licensed under the [MIT license]
 - **MadeltAlfa => Nanda**
 - **ArvianRanditya => Vian**
 - **dekputri705-droid => Putri**
+## Installation
+
+To set up this project on your local machine, follow these steps:
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/your-project.git
+    ```
+    (Replace `https://github.com/your-username/your-project.git` with the actual repository URL)
+
+2.  **Navigate into the project directory**:
+    ```bash
+    cd your-project
+    ```
+    (Replace `your-project` with the actual project folder name)
+
+3.  **Install PHP dependencies**:
+    ```bash
+    composer install
+    ```
+
+4.  **Copy the environment file**:
+    ```bash
+    cp .env.example .env
+    ```
+
+5.  **Generate an application key**:
+    ```bash
+    php artisan key:generate
+    ```
+
+6.  **Configure your database**:
+    Open the newly created `.env` file and update the database connection details (e.g., `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`) to match your local database setup.
+
+7.  **Run database migrations**:
+    ```bash
+    php artisan migrate
+    ```
+
+8.  **Seed the database (optional)**:
+    If your project includes seeders for initial data, run:
+    ```bash
+    php artisan db:seed
+    ```
+
+9.  **Start the local development server**:
+    ```bash
+    php artisan serve
+    ```
+
+10. **Access the application**:
+    Open your web browser and visit the URL displayed in your terminal (usually `http://127.0.0.1:8000`).
