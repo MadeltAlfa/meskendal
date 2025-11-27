@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         $this->call([
+            // User Seeder
+            UserSeeder::class,
+
             //  Tentang Kami Seeders
             ProfilLembagaSeeder::class,
             VisiMisiSeeder::class,
