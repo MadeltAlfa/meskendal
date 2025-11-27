@@ -71,7 +71,7 @@ To set up this project on your local machine, follow these steps:
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/MadeltAlfa/meskendal.git
     ```
     (Replace `https://github.com/your-username/your-project.git` with the actual repository URL)
 
