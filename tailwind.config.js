@@ -11,9 +11,18 @@ export default {
 
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            colors: {
+                'jabal-green': '#255F38',
+                'jabal-light': '#1F7D53',
+                'jabal-putih': '#FFFFFF'
             },
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+            },
+            borderRadius: {
+                'xl': '1rem',
+                '2xl': '1.25rem'
+            }
         },
     },
 

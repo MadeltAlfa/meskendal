@@ -5,32 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'MES Kendal')</title>
-    <link rel="icon" type="image/svg+xml" href="{{ asset('image2vector.svg') }}">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/image2vector.svg') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'jabal-green': '#255F38',
-                        'jabal-light': '#1F7D53',
-                        'jabal-putih': '#FFFFFF'
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif']
-                    },
-                    borderRadius: {
-                        'xl': '1rem',
-                        '2xl': '1.25rem'
-                    }
-                }
-            }
-        }
-    </script>
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -53,7 +34,7 @@
         <aside id="sidebar"
             class="fixed top-0 left-0 z-50 w-64 h-screen bg-white border-r p-6 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
             <a href="{{ route('home') }}">
-                <img src="{{ asset('images/logomes.png') }}" alt="Logo MES Kendal" class="h-10 w-auto">
+                        <img src="{{ asset('images/logomess.png') }}" alt="Logo MES Kendal" class="h-10 w-auto">
             </a>
             <nav class="mt-8 flex-grow overflow-y-auto">
                 <ul class="space-y-2">
@@ -207,7 +188,7 @@
                         </svg>
                     </button>
                     <a href="{{ route('home') }}">
-                        <img src="{{ asset('images/logomes.png') }}" alt="Logo MES Kendal" class="h-10 w-auto">
+                                <img src="{{ asset('images/logomess.png') }}" alt="Logo MES Kendal" class="h-10 w-auto">
                     </a>
                 </div>
             </header>
